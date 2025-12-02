@@ -1,11 +1,13 @@
 === Test 1 ===
-p1 use_count: 1
-After copy, p1 use_count: 2
-After copy, p1 use_count: 3
-After p3 goes out of scope, p1 use_count: 2
-After p2 reset, p1 use_count: 1:Jack
-After p2 reset, p2 use_count: 1:Kim
+Create p1 : Jack
+After move, p1 is empty
+Create p2 : Jack
+Create p3 : Kim
 Delete Student Kim
+After move, p2 is empty
+After move, p3 : Jack
 Delete Student Jack
-After p1 reset, p1 use_count: 1
-After p1 reset, p1 is nullptr
+After p3 reset, p3 : Lee
+p3 release ownership
+raw pointer: Lee
+Delete Student Lee

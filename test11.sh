@@ -1,7 +1,7 @@
  #!/bin/bash
 
 if [ $# -eq 0 ]; then
-    args="1 2"
+    args="1 2 3"
 else
     args="$@"
 fi

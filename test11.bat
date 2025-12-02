@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 if "%~1"=="" (
-    set args=1 2 
+    set args=1 2 3
 ) else (
     set args=%*
 )
